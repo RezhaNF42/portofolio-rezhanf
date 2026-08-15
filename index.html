@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RezhaNF | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- MUSIC BUTTON (DI POJOK ATAS) -->
+    <button id="music-toggle" class="music-btn"><i class="fas fa-music"></i></button>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="hero-overlay"></div>
+         <canvas id="particles-canvas"></canvas>
+        <div class="hero-content">
+            <div class="profile-wrapper">
+                <img src="img/profile.jpg" alt="RezhaNF Profile" class="profile-pic">
+            </div>
+            <h1>RezhaNF</h1>
+            <p class="title">Front-End Developer & UX/UI Designer</p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+            
+            <!-- NAVIGASI DENGAN ANIMASI INTERAKTIF -->
+            <div class="nav-links">
+                <a href="#about">Tentang</a>
+                <a href="#skills">Skill</a>
+                <a href="#projects">Proyek</a>
+                <a href="#services">Layanan</a>
+                <a href="#experience">Pengalaman</a>
+                <a href="#contact">Kontak</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG SAYA -->
+    <section id="about" class="container">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah front-end developer yang fokus pada pembuatan website yang tidak hanya berfungsi dengan baik, tetapi juga memberikan pengalaman pengguna yang menyenangkan.</p>
+        
+        <div class="about-grid">
+            <div class="about-item">
+                <h3>Fokus Saya</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>UI/UX Design</li>
+                    <li>Performance Optimization</li>
+                </ul>
+            </div>
+            <div class="about-item">
+                <h3>Status</h3>
+                <p><span class="status-dot"></span> Tersedia untuk proyek freelance</p>
+                <h3>Lokasi</h3>
+                <p>Jakarta, Indonesia <br> <small>Bisa remote</small></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILL -->
+    <section id="skills" class="container">
+        <h2>Skill</h2>
+        <p class="subtitle">Teknologi yang saya gunakan sehari-hari</p>
+
+        <div class="skill-bar">
+            <div class="skill-info"><span>HTML5</span><span>90%</span></div>
+            <div class="progress"><div class="progress-fill" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-info"><span>CSS3</span><span>85%</span></div>
+            <div class="progress"><div class="progress-fill" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-info"><span>JavaScript</span><span>75%</span></div>
+            <div class="progress"><div class="progress-fill" style="width: 75%;"></div></div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-info"><span>UI/UX Design</span><span>70%</span></div>
+            <div class="progress"><div class="progress-fill" style="width: 70%;"></div></div>
+        </div>
+    </section>
+
+    <!-- PROYEK -->
+    <section id="projects" class="container">
+        <h2>Proyek Terbaru</h2>
+        <p class="subtitle">Beberapa proyek yang pernah saya kerjakan</p>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="img/project1.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Website Portofolio</h3>
+                    <p>Website portofolio pribadi dengan fokus pada performa dan desain minimalis.</p>
+                    <div class="links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/project2.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Landing Page Produk</h3>
+                    <p>Landing page untuk produk digital dengan conversion rate optimization.</p>
+                    <div class="links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/project3.jpg" alt="Project 3">
+                <div class="project-info">
+                    <h3>Aplikasi To-Do List</h3>
+                    <p>Aplikasi sederhana untuk mengelola tugas dengan localStorage.</p>
+                    <div class="links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- LAYANAN / JASA SAYA (BAGIAN BARU) -->
+    <section id="services" class="container">
+        <h2>Layanan & Jasa</h2>
+        <p class="subtitle">Solusi lengkap untuk kebutuhan digital dan gaming kamu.</p>
+
+        <div class="service-grid">
+            <!-- Kartu 1: Jasa Design -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-palette"></i></div>
+                <h3>Jasa Design</h3>
+                <p>UI/UX Website, Logo, hingga Desain Grafis profesional untuk bisnis kamu.</p>
+                <span class="service-tag">Mulai 150k</span>
+            </div>
+
+            <!-- Kartu 2: Akun Game -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-gamepad"></i></div>
+                <h3>Akun FF & ML</h3>
+                <p>Akun premium Free Fire & Mobile Legends dengan harga terbaik dan aman.</p>
+                <span class="service-tag">Ready Stok</span>
+            </div>
+
+            <!-- Kartu 3: Topup -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-coins"></i></div>
+                <h3>Topup Game</h3>
+                <p>Topup diamond, UC, dan voucher game lainnya dengan proses cepat dan murah.</p>
+                <span class="service-tag">24 Jam</span>
+            </div>
+
+            <!-- Kartu 4: Bot & Server -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-robot"></i></div>
+                <h3>Bot Assist & Server</h3>
+                <p>Custom bot AI & Penyedia VPS/VPS Node Ryzen (RAM/CPU/Disk Custom).</p>
+                <span class="service-tag">Spesial</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PENGALAMAN -->
+    <section id="experience" class="container">
+        <h2>Pengalaman</h2>
+        <p class="subtitle">Perjalanan karir saya</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2026 - Sekarang</span>
+                    <h3>Freelance Web Developer</h3>
+                    <p>Mengerjakan berbagai proyek web untuk klien kecil dan menengah.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2024 - 2025</span>
+                    <h3>Junior Developer Intern</h3>
+                    <p>Membantu pengembangan website internal perusahaan.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2023 - 2024</span>
+                    <h3>Belajar Web Development</h3>
+                    <p>Mulai belajar HTML, CSS, dan JavaScript secara otodidak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK (TOMBOL LINK) -->
+    <section id="contact" class="container">
+        <h2>Mari Terhubung</h2>
+        <p>Saya selalu terbuka untuk diskusi proyek baru atau sekadar bertukar ide.</p>
+
+        <div class="contact-grid">
+            <a href="mailto:rezhastore142@gmail.com" class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+            <a href="https://github.com/Rezhanf" target="_blank" class="contact-card">
+                <i class="fab fa-github"></i>
+                <span>Github</span>
+            </a>
+            <a href="https://linkedin.com/in/username" target="_blank" class="contact-card">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://wa.me/6285724700472" target="_blank" class="contact-card">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+        
+        <div class="footer-music">
+            <p>© 2026 RezhaNF. Dibuat dengan <i class="fas fa-heart" style="color: #2ecc71;"></i></p>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    
+        <!-- (Bagian footer/music sebelumnya tetap ada) -->
+
+    <!-- TOMBOL CHAT ASSISTEN APRIL -->
+    <button id="chat-toggle" class="chat-btn">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <!-- MODAL WELCOME (SELAMAT DATANG APRIL) -->
+    <div id="welcome-modal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-avatar">
+                <!-- Bisa pake foto April atau icon -->
+                <i class="fas fa-user-ninja"></i> 
+            </div>
+            <div class="modal-content">
+                <h3>Halo, Tamu!</h3>
+                <p>"Tch... Akhirnya ada juga yang mau liat portofolio Tuan Rezha. Aku April, asisten di sini. Mau kulihatkan yang terbaik?"</p>
+                <div class="modal-actions">
+                    <button id="accept-guide" class="btn-primary">Lanjutkan</button>
+                    <button id="reject-guide" class="btn-secondary">Tolak</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOX CHAT (Tempat ngobrol sama April) -->
+    <div id="chat-box" class="chat-container hidden">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fas fa-user-ninja" style="color: #2ecc71;"></i> April Ruan
+            </div>
+            <button id="close-chat" class="close-chat-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <!-- Pesan akan muncul di sini lewat JS -->
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Tanya apa aja sama April..." disabled>
+            <button id="send-chat"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- JANGAN LUPA TUTUP BODY DAN HTML -->
+</body>
+</html>
